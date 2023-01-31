@@ -2,7 +2,9 @@
 /**
  * L'ensemble des fonctions du thème
  */
+
    function enfiler_css() {
+
     wp_enqueue_style('4w4-gr1-principal', // identificateur
                       get_template_directory_uri() . '/style.css', // adresse url de style.css
                       array(), // definir les dépendances

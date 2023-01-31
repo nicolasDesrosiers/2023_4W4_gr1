@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>mon site web</title>
+    <title>mon site web</title> <!-- Titre du document -->
 
     <?php wp_head(); ?> <!-- Generer l'entente de notre page -->
 
