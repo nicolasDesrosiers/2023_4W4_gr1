@@ -1,0 +1,23 @@
+- **git status** (permet de vérifier l'état de notre dépôt:)
+     - Des fichiers doivent être indexé si ils apparaissent en rouge
+     - en vert ils ont été indexé et on doit faire un commit
+     - après avoir fait un commit 
+ - **git add** --all ou git add  .
+ - **git commit** -m "s2c1 on décrit les modification"
+     - après avoir fait un commit le dépôt est clair
+ - git **add --all** ou **git add  .**
+ - git **commit -m "s2c1 on décrit les modification"**
+ - **git log**
+ - **git log --oneline**
+ - **git remote add 4w4 https://github.com/.....git** ( crée un alias qui pointe vers votre dépot github)
+- **git branch -m main**  (change le nom de la branche master pour main)
+- **git branch lab1** (créer la branche «lab1» )
+- **git checkout lab1** (pour changer de branche vers «lab1»)
+- **git log --oneline** (les branches lab1 et main pointe vers le même commit)
+- git chechout main ( pour activer la branch main )
+- git push 4w4 main (pousse la branche active «main» vers github dans le dépôt 4w4 vers la branche main)
+- git checkout lab1
+- git push 4w4 lab1
+- git branch lab2
+- git checkout lab2 ( se metttre dans la branche lab2)
+- git push 4w4 lab2 (pousse la branche active lab2 vers 4w4 dans la branche lab2)
