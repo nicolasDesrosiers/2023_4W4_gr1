@@ -1,0 +1,28 @@
+/*
+Theme Name: 4W4 Nicolas Carriere
+Theme URI: https://github.com/nicolasDesrosiers/2023_bd_gr1
+Author: Nicolas Carriere
+Version: 1.0.0
+Author URI: https://nicolasCarriere.sg-host.com
+Description: Theme realiser dans le cour de 4W4
+Requires at least: 6.0
+Tested up to: 6.1.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4W4_Nicolas_Carriere
+*/
+
+
+@import "variable/dimension";
+@import "normalize/normalize";
+//@import "normalize/box-sizing";
+
+/* --------------------------------------------- base */
+@import "base/heading";
+//@import "base/espacement";
+//@import "base/lien";
+//@import "base/list";
+
+/* --------------------------------------------- composant */
+//@import "composant/entete";
