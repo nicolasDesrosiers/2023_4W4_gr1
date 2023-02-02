@@ -6,8 +6,8 @@
     <?php get_header(); ?>
 
         <main>
-            
-            <pre>index.php</pre>
+
+            <pre>front-page.php</pre>
             <h1>Bienvenue sur 4W4</h1>
 
             <?php 

@@ -6,6 +6,7 @@ h1 {
   }
   h3 {
     font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+
   }
   h4 {
     font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
@@ -36,6 +37,7 @@ h1 {
   h5,
   h6 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin : .5rem 0;
   }
   
   p {
