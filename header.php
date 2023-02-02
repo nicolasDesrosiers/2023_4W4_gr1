@@ -7,7 +7,7 @@
     
     <title>mon site web</title> <!-- Titre du document -->
 
-    <a href="<?= bloginfo('url'); ?>"><h1><?= bloginfo('name'); ?></h1></a> <!-- Affiche l'information sur le site -->
+    <a class="site__titre" href="<?= bloginfo('url'); ?>"><h1><?= bloginfo('name'); ?></h1></a> <!-- Affiche l'information sur le site -->
     <h2><?= bloginfo('description'); ?></h2>
     
 
