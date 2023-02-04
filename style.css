@@ -351,11 +351,13 @@ P {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
 }
 
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
   /* font-family: "Slackey", cursive; */
 }
 
@@ -363,12 +365,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 0.5rem 0;
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+pre {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+article {
+  border: 1px black solid;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(169, 169, 169, 0.5);
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 /* --------------------------------------------- composant */
@@ -378,4 +400,9 @@ p {
 
 .site__titre h1 {
   font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+}
+
+article a {
+  text-decoration: none;
+  text-align: right;
 }

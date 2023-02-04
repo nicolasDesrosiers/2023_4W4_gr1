@@ -5,11 +5,12 @@
 
     <?php get_header(); ?>
 
+    <pre>index.php</pre>
+    
+    <h1>Bienvenue sur 4W4</h1>
+
         <main>
             
-            <pre>index.php</pre>
-            <h1>Bienvenue sur 4W4</h1>
-
             <?php 
                 if (have_posts()):
                     while(have_posts()):
@@ -21,7 +22,7 @@
                         </article>
                     <?php endwhile; ?>
                 <?php endif; ?>
-           
+            
         </main>
 
     <?php get_footer(); ?>   
