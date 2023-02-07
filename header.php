@@ -7,11 +7,15 @@
     
     <title>mon site web</title> <!-- Titre du document -->
 
-    <a class="site__titre" href="<?= bloginfo('url'); ?>"><h1><?= bloginfo('name'); ?></h1></a> <!-- Affiche l'information sur le site -->
-    <h2><?= bloginfo('description'); ?></h2>
-    
-
     <?php wp_head(); ?> <!-- Generer l'entente de notre page -->
-
+    
 </head>
 <body>
+    <header>
+        <?php wp_nav_menu(array(
+                            "menu" => "entete"
+        )); ?> 
+        <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1> <!-- Affiche l'information sur le site -->
+        <h2><?= bloginfo('description'); ?></h2> <!-- permet d'extraire description de WP -->
+
+    </header>
