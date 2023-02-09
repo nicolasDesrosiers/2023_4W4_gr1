@@ -1,19 +1,30 @@
 .site__titre {
 
     text-decoration: none;
-    
-   
 }
+.site__titre:visited {
 
+    color: white;
+}
 .site__titre h1 {
 
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-   
-   
 }
 
-article a {
+.menu__entete { // balise nav 
+    display: flex;
+    justify-content: space-between;
+    .menu { // ul 
+            display: flex;
+            list-style-type: none;
+            justify-content: flex-end;
 
-    text-decoration: none;
-    text-align: right;
+        .menu-item { // li 
+
+            a{ // lien
+                padding: 3px 10px;
+            }
+        }
+    }
+
 }
