@@ -357,9 +357,8 @@ h1 {
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Abril Fatface", cursive;
   text-align: center;
-  /* font-family: "Slackey", cursive; */
 }
 
 h3,
@@ -374,29 +373,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-pre {
-  text-align: center;
-}
-
-main {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-article {
-  border: 1px black solid;
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(169, 169, 169, 0.5);
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
+  font-family: "Abril Fatface", cursive;
 }
 
 .site__titre:visited {
@@ -410,6 +390,7 @@ article {
 .menu__entete {
   display: flex;
   justify-content: space-between;
+  background-color: black;
 }
 .menu__entete .menu {
   display: flex;
@@ -418,6 +399,11 @@ article {
 }
 .menu__entete .menu .menu-item a {
   padding: 3px 10px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.menu__entete .menu .menu-item a:hover {
+  color: green;
 }
 
 /* ===================== changement général css ===================== */

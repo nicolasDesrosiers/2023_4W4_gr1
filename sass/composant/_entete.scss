@@ -1,19 +1,25 @@
 .site__titre {
 
     text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+
 }
 .site__titre:visited {
 
+   
     color: white;
+    
 }
 .site__titre h1 {
 
+    
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
 }
 
 .menu__entete { // balise nav 
     display: flex;
     justify-content: space-between;
+    background-color: black;
     .menu { // ul 
             display: flex;
             list-style-type: none;
@@ -23,6 +29,13 @@
 
             a{ // lien
                 padding: 3px 10px;
+                text-decoration: none;
+                color: whitesmoke;
+               
+            }
+            
+            a:hover {
+                color: green;
             }
         }
     }
