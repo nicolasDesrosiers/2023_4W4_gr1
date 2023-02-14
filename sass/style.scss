@@ -20,12 +20,14 @@ Text Domain: 4W4_Nicolas_Carriere
 
 /* --------------------------------------------- base */
 @import "base/heading";
+@import "base/markdown";
 //@import "base/espacement";
 //@import "base/lien";
 //@import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
+@import "composant/blockflex";
 
 /* ===================== changement général css ===================== */
 main{

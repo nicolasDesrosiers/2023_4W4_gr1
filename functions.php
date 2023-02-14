@@ -5,7 +5,6 @@
 
 
  /*======================= Charge les feuilles de style ======================== */
-
    function enfiler_css() {
 
     wp_enqueue_style('4w4-gr1-principal', // identificateur

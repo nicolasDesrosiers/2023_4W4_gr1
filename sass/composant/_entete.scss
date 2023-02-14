@@ -1,25 +1,20 @@
-.site__titre {
+//////////////////////////////////////// CONTENEUR MENU ///////////////
 
-    text-decoration: none;
-    font-family: 'Abril Fatface', cursive;
+.entete__nav {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
 
 }
-.site__titre:visited {
 
-   
-    color: white;
-    
-}
-.site__titre h1 {
-
-    
-    font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-}
+//////////////////////////////////////// MENU NAVIGATION ///////////////
 
 .menu__entete { // balise nav 
     display: flex;
     justify-content: space-between;
     background-color: black;
+
     .menu { // ul 
             display: flex;
             list-style-type: none;
@@ -41,3 +36,16 @@
     }
 
 }
+
+//////////////////////////////////////// TITRE PRINCIPAL DE SITE ///////
+
+.site__titre{
+
+    font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+
+    a{
+        text-decoration: none;
+        font-family: 'Abril Fatface', cursive;
+    }
+}
+
