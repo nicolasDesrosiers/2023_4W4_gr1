@@ -373,6 +373,12 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+pre {
+  background-color: #555;
+  color: whitesmoke;
+  overflow-x: scroll;
+}
+
 /* --------------------------------------------- composant */
 .entete__nav {
   display: flex;
@@ -407,12 +413,20 @@ p {
   font-family: "Abril Fatface", cursive;
 }
 
-/* ===================== changement général css ===================== */
-main {
+.blocflex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+article {
+  flex: 1 0 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid red;
+}
+
+/* ===================== changement général css ===================== */
 body {
   background-color: darkslategrey;
 }
@@ -423,7 +437,6 @@ pre {
 
 article {
   border: 1px black solid;
-  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
