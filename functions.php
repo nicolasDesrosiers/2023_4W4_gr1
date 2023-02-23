@@ -52,4 +52,5 @@
            $query->set( 'order', 'ASC' ); // trier en ordre ascendant
            }
           }
+          add_action( 'pre_get_posts','cidweb_modifie_requete_principal');
 
