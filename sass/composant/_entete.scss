@@ -1,51 +1,42 @@
-//////////////////////////////////////// CONTENEUR MENU ///////////////
-
-.entete__nav {
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-}
-
-//////////////////////////////////////// MENU NAVIGATION ///////////////
-
-.menu__entete { // balise nav 
-    display: flex;
+.entete__nav{
+    display : flex;
     justify-content: space-between;
-    background-color: black;
-
-    .menu { // ul 
-            display: flex;
-            list-style-type: none;
-            justify-content: flex-end;
-
-        .menu-item { // li 
-
-            a{ // lien
-                padding: 3px 10px;
-                text-decoration: none;
-                color: whitesmoke;
-               
-            }
-            
-            a:hover {
-                color: green;
-            }
-        }
-    }
+    align-items: center;
 
 }
 
-//////////////////////////////////////// TITRE PRINCIPAL DE SITE ///////
 
-.site__titre{
 
+.site__titre {
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
 
-    a{
+    a {
         text-decoration: none;
-        font-family: 'Abril Fatface', cursive;
     }
 }
 
+/* ///////////////////////////////// menu__entete */
+.menu__entete{ // nav
+
+    .menu { // ul
+            display : flex;
+            list-style-type: none;
+            justify-content: flex-end;
+        .menu-item { // li
+
+            a{
+                padding : 3px 5px;
+            }
+
+        }
+        .menu-item::before {
+            content: "";
+            background: transparent;
+            border-radius: 0;
+            padding-inline: 0;
+            margin-inline-end: 0;
+        }
+
+    }
+
+}

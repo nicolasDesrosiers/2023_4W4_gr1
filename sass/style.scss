@@ -32,25 +32,24 @@ Text Domain: 4W4_Nicolas_Carriere
 /* ===================== changement général css ===================== */
 
 body{
-
-    background-color: darkslategrey;
+ 
+  background-color: rgb(60, 60, 60);
+  
 }
 pre {
 
     text-align: center;
 }
-article {
 
-    border: 1px black solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(169, 169, 169, 0.2);
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  article a {
-    
-    text-decoration: none;
-    text-align: right;
+article{
+  flex: 1 0 250px;
+  padding: 5px;
+  margin: 20px;
+}
+
+article a {
+
+text-decoration: none;
+text-align: right;
+
 }
