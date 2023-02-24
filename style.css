@@ -379,25 +379,27 @@ p {
 ul,
 ol {
   margin: 0rem 0rem;
-  padding: 3px;
+  padding: 7px;
+  color: #444;
+  list-style-type: none;
 }
 @media screen and (min-width: 400px) {
   ul,
 ol {
     margin: 1rem 0.5rem;
-    padding: 10px;
+    padding: 0 13px;
   }
 }
 @media screen and (min-width: 700px) {
   ul,
 ol {
     margin: 1rem 0.5rem;
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 
 ul {
-  list-style-type: circle;
+  border: #444 solid 1px;
 }
 
 ul li,
@@ -405,12 +407,25 @@ ol li {
   margin: 0.5rem 0rem;
 }
 
-pre {
-  background-color: #555;
-  color: whitesmoke;
-  overflow-x: scroll;
+ul li::before {
+  content: "-";
+  background: rgb(67, 224, 235);
+  border-radius: 50%;
+  padding-inline: 0.3rem;
+  margin-inline-end: 0.3rem;
+  width: 1rem;
+  height: 1rem;
 }
 
+ul li li::before {
+  background: transparent;
+  content: ".";
+}
+
+/*
+li > ol {}
+li > ul {}
+*/
 /* --------------------------------------------- composant */
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
 .entete__nav {
@@ -464,7 +479,7 @@ pre {
   flex-wrap: wrap;
 }
 
-article {
+.blocflex article {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -472,6 +487,18 @@ article {
   padding: 1rem;
   background-color: rgb(95, 105, 96);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+article h3 {
+  text-align: center;
+  color: whitesmoke;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: black;
+  transition: all 0.5s ease;
+}
+
+article h3:hover {
+  color: blue;
 }
 
 #s {
@@ -483,14 +510,26 @@ article {
 }
 
 .recherche__section {
-  border: red 1px solid;
+  border: whitesmoke 1px solid;
   display: flex;
   flex-wrap: wrap;
 }
 
 .recherche__section article {
   background-color: rgba(245, 245, 245, 0.5);
-  width: 40%;
+}
+
+.erreur {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.erreur h1 {
+  color: red;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /* ===================== changement général css ===================== */

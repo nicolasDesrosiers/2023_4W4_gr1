@@ -6,7 +6,7 @@
     <?php get_header(); ?>
 
    
-        <main>
+        <main class="erreur">
 
         <pre> 404.php</pre>
         <h1>Erreur 404</h1>
