@@ -46,11 +46,12 @@
             a:hover {
 
                 color: rebeccapurple;
-                transform: scale(1.5);
+                
             }
 
         }
         .menu-item::before {
+        
             content: "";
             background: transparent;
             border-radius: 0;
