@@ -9,7 +9,7 @@
     
     <h1>Bienvenue sur 4W4</h1>
 
-        <main>
+        <main class="site__main">
             
             <?php 
                 if (have_posts()):

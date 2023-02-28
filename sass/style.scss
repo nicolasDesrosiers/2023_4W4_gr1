@@ -31,6 +31,8 @@ Text Domain: 4W4_Nicolas_Carriere
 @import "composant/recherche";
 @import "composant/erreur";
 
+/* --------------------------------------------- composant */
+@import "layout/aside-contenu";
 
 /* ===================== changement général css ===================== */
 
@@ -38,10 +40,6 @@ body{
  
   background-color: rgb(60, 60, 60);
   
-}
-pre {
-
-    text-align: center;
 }
 
 article{

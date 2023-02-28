@@ -10,7 +10,7 @@
     <title>mon site web</title> <!-- Titre du document -->
     <?php wp_head(); ?> <!-- Generer l'entente de notre page -->
 </head>
-<body>
+<body class="site">
     <header class="site__entete">
        <section class="entete__nav">
        <?php the_custom_logo();?>
@@ -24,3 +24,18 @@
         <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1> <!-- Affiche l'information sur le site -->
         <h2 class="site__description"><?= bloginfo('description'); ?></h2> <!-- permet d'extraire description de WP -->
     </header>
+    <aside class="site__aside">
+        <h3>Menu Secondaire</h3>
+       <?php 
+         $category = get_queried_object();
+         if(isset($category)){
+            $menu = $category->slug;
+         } else($menu = "note-4w4");
+                
+            wp_nav_menu(array(
+            "menu" => $menu,
+            "container" => "nav",
+            "container_class" => "menu__aside"
+            )) ?>
+
+    </aside>

@@ -23,8 +23,18 @@
             // contenue dans $queryljep 
             if ( $query->have_posts() ) :
                 while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                <?php $titre = get_the_title(); ?>
+                <?php if($category->slug == "cours") {
+                        $sigle = substr($titre,0,7);
+                        $titre_long = substr($titre,7,-5);
+                        $duree = "90";
+                        $titre = $titre_long;
+
+               } ?> 
                     <article>
-                    <h6><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h6>
+                    <h6><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h6>
+
                     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
                     </article>
                 <?php endwhile; ?>

@@ -463,7 +463,6 @@ li > ul {}
 }
 .menu__entete .menu .menu-item a:hover {
   color: rebeccapurple;
-  transform: scale(1.5);
 }
 .menu__entete .menu .menu-item::before {
   content: "";
@@ -501,20 +500,6 @@ article h3:hover {
   color: blue;
 }
 
-#s {
-  border-radius: 10px;
-}
-
-.recherche__bouton {
-  background-color: rebeccapurple;
-}
-
-.recherche__section {
-  border: whitesmoke 1px solid;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .recherche__section article {
   background-color: rgba(245, 245, 245, 0.5);
 }
@@ -532,13 +517,46 @@ article h3:hover {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+/* --------------------------------------------- composant */
+/**
+Mise en page générale avec display Grid
+*/
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+.site__entete {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: antiquewhite;
+}
+
+.site__main {
+  grid-area: main;
+  background-color: rgb(215, 222, 250);
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: rgb(250, 215, 229);
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(250, 215, 215);
+}
+
 /* ===================== changement général css ===================== */
 body {
   background-color: rgb(60, 60, 60);
-}
-
-pre {
-  text-align: center;
 }
 
 article {
