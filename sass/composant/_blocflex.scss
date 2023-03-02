@@ -6,7 +6,7 @@
     
 }
 
-.blocflex article {
+.blocflex__article {
 
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-article h3 {
+.blocflex__article h3 {
 
     text-align: center;
     color: whitesmoke;
@@ -28,8 +28,14 @@ article h3 {
 
 }
 
-article h3:hover {
+.blocflex__article h3:hover {
 
     color: blue;
     
+}
+
+.blocflex__galerie {
+
+    flex: 1 0 100%;
+
 }

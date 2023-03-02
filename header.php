@@ -30,7 +30,9 @@
          $category = get_queried_object();
          if(isset($category)){
             $menu = $category->slug;
-         } else($menu = "note-4w4");
+
+         } else{
+            $menu = "note-4w4"; }
                 
             wp_nav_menu(array(
             "menu" => $menu,
