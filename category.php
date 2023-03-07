@@ -8,7 +8,7 @@
 ?>
 
     <?php get_header(); ?>
-        <h2>category.php</h2>
+        
         <main class="site__main">
         <section class="blocflex">
             <?php

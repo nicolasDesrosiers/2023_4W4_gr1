@@ -11,8 +11,12 @@
             <section class="blocflex">
             <?php 
                 if (have_posts()):
-                    while(have_posts()): the_post(); // extrait un objet "post" ?> 
-                       <?php get_template_part("template-parts/categorie", "note-4w4") ?>
+                    while(have_posts()): the_post(); // extrait un objet "post" 
+                         $la_categorie = 'note-4w4';
+                         if(in_category("galerie")) {
+                            $la_categorie = 'galerie';}
+                            
+                            get_template_part("template-parts/categorie",$la_categorie); ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </section>

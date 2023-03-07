@@ -54,3 +54,21 @@
           }
           add_action( 'pre_get_posts','cidweb_modifie_requete_principal');
 
+/**
+ * Permet de personaliser chacuns des titre du menu cours
+ * @param $title : titre du menu a modifier
+ *        $item : la structure "li" du menu
+ *        $agrs : objet décvrivant l'ensemble des menus de notre site
+ *        $depth : niveau de profondeur du menu (on l'a retirer ici)
+ */
+
+
+function perso_menu_item_title($title, $item, $args) {
+    // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
+    if($args->menu == 'cours') { // on filtre uniquement le menu "cours"
+// Modifier la longueur du titre en fonction de vos besoins
+$title = wp_trim_words($title, 3, ' ... '); // A MODIFIER.AMELIORER POUR LE TP1 !!!!!!!
+}
+return $title;
+}
+add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
