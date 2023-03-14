@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <title>mon site web</title> <!-- Titre du document -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Nicolas Carriere - Site web</title> <!-- Titre du document -->
     <?php wp_head(); ?> <!-- Generer l'entente de notre page -->
 </head>
 
@@ -19,17 +20,23 @@ if(is_front_page()) {
 
 <body class="site <?= $nouvel_class ?>">
     <header class="site__entete">
+
        <section class="entete__nav">
-       <?php the_custom_logo();?>
-            <?php wp_nav_menu(array(
-                                "menu" => "entete",
-                                "container" => "nav",
-                                "container_class" => "menu__entete"
-            )); ?> 
-             <?= get_search_form(); ?>            
+         <?php the_custom_logo();?> 
+         <input type="checkbox" id="menu__burger" name="">
+         <label for="menu__burger"><span class="material-symbols-outlined">menu</span></label>
+         <?php wp_nav_menu(array(
+                    "menu" => "entete",
+                    "container" => "nav",
+                    "container_class" => "menu__entete")); ?> 
         </section>
-        <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1> <!-- Affiche l'information sur le site -->
-        <h2 class="site__description"><?= bloginfo('description'); ?></h2> <!-- permet d'extraire description de WP -->
+
+        <div class="acceuil">
+            <div class="menu__recherche">
+                <?= get_search_form(); ?>  
+                <h2 class="site__description"><?= bloginfo('description'); ?></h2> <!-- permet d'extraire description de WP -->
+            </div> 
+        </div>
     </header>
    
     <?php  

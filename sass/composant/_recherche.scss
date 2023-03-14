@@ -1,17 +1,37 @@
+.recherche{
+
+    
+
+   border: blueviolet 1px solid;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   height: 3rem;
+
+
+}
+
 
 .recherche__bouton {
 
+    padding: 0.4rem;
     
+    border-radius: 10px;
+   
+   
+}
 
+.recherche__input {
+
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    
+    
 }
 
 
 
-.recherche__section article {
-
-    background-color: rgb(245, 245, 245, 0.5);
-    
-    
-}
 
 

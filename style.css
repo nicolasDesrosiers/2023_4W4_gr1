@@ -407,50 +407,82 @@ ol li {
   margin: 0.5rem 0rem;
 }
 
-ul li::before {
-  content: "-";
-  background: rgb(67, 224, 235);
-  border-radius: 50%;
-  padding-inline: 0.3rem;
-  margin-inline-end: 0.3rem;
-  width: 1rem;
-  height: 1rem;
-}
-
-ul li li::before {
-  background: transparent;
-  content: ".";
-}
-
 /*
 li > ol {}
 li > ul {}
 */
 /* --------------------------------------------- composant */
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
+.site__entete {
+  border: yellow 1px solid;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.custom-logo-link {
+  margin-left: 1rem;
+}
+
 .entete__nav {
+  border: blueviolet 1px solid;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(95, 105, 96);
+  background-color: black;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/* ////////////////////////////// Titre page (home) //////////////////////////*/
-.site__titre {
-  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-  text-align: right;
+/* ////////////////////////////// RECHERCHE //////////////////////////*/
+.menu__recherche {
+  border: 1px solid aqua;
+  display: flex;
+  flex-direction: column-reverse;
 }
-.site__titre a {
+
+.site__description {
+  font-family: "Righteous", cursive;
+  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+  text-align: center;
+}
+.site__description a {
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
+}
+
+/* ////////////////////////////// BOUTON BURGER //////////////////////////*/
+.material-symbols-outlined {
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 1.5rem;
+}
+
+#menu__burger:checked ~ .menu__entete {
+  transform: translateX(0);
 }
 
 /* ///////////////////////////////// Menu navigation ////////////////////////////*/
-.menu__entete .menu {
+.menu__entete {
+  border: red 1px solid;
   display: flex;
-  list-style-type: none;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translate(30rem);
+  width: 30%;
+  height: 20vh;
+  background-color: blue;
+  position: absolute;
+  top: 20vh;
+  right: 0;
+}
+@media screen and (min-width: 800px) {
+  .menu__entete {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .menu__entete .menu .menu-item a {
   padding: 3px 5px;
@@ -463,13 +495,6 @@ li > ul {}
 }
 .menu__entete .menu .menu-item a:hover {
   color: rebeccapurple;
-}
-.menu__entete .menu .menu-item::before {
-  content: "";
-  background: transparent;
-  border-radius: 0;
-  padding-inline: 0;
-  margin-inline-end: 0;
 }
 
 .blocflex {
@@ -501,11 +526,27 @@ li > ul {}
 }
 
 .blocflex__galerie {
-  flex: 1 0 100%;
+  flex: 1 0 90%;
 }
 
-.recherche__section article {
-  background-color: rgba(245, 245, 245, 0.5);
+.recherche {
+  border: blueviolet 1px solid;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.recherche__bouton {
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+.recherche__input {
+  width: 15rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .erreur {
@@ -519,6 +560,41 @@ li > ul {}
 .erreur h1 {
   color: red;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  flex: 1 0 40px;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+  }
 }
 
 /* --------------------------------------------- composant */
@@ -549,7 +625,6 @@ Mise en page générale avec display Grid
 
 .site__entete {
   grid-area: header;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: antiquewhite;
 }
 

@@ -15,8 +15,6 @@ ol {
     }
 }
 
-
-
 ul {
   
    border: #444 solid 1px;
@@ -24,25 +22,14 @@ ul {
 
 ul li, 
 ol li {
+
     margin: .5rem 0rem;
    
 }
 
 
- ul   li::before {
-    content: "-";
-    background: rgb(67, 224, 235);
-    border-radius: 50%;
-    padding-inline: .3rem;
-    margin-inline-end: .3rem;
-    width: 1rem;
-    height: 1rem;
-      }
-      ul li li::before
-      {
-        background: transparent;
-        content: ".";
-      }
+
+
 
 
 /*

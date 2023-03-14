@@ -1,37 +1,105 @@
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
 
-.entete__nav{
+.site__entete { // logo,site dexcription,menu,bouton,recherche
+    border: yellow 1px solid;
+    position: relative;
+   overflow-x: hidden;
+}
 
-    display : flex;
+.custom-logo-link { // logo
+    margin-left: 1rem;
+    
+}
+
+.entete__nav{  
+    border: blueviolet 1px solid;
+    position: relative;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(95, 105, 96);
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/* ////////////////////////////// Titre page (home) //////////////////////////*/
+/* ////////////////////////////// RECHERCHE //////////////////////////*/
 
-.site__titre {
+
+.menu__recherche { //form de recherche, site description
+
+    border: 1px solid aqua;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.site__description {
+
+    font-family: 'Righteous', cursive;
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-    text-align: right;
+    text-align: center;
 
     a {
 
         text-decoration: none;
-        color: whitesmoke;
+        color: black
     }
 }
+
+/* ////////////////////////////// BOUTON BURGER //////////////////////////*/
+
+.material-symbols-outlined { // icone burger
+
+    color: white;
+    font-size: 6rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 1.5rem;
+}
+
+#menu__burger:checked ~ .menu__entete {
+
+    transform: translateX(0);
+
+}
+
+
+
+
 
 /* ///////////////////////////////// Menu navigation ////////////////////////////*/
 
 .menu__entete{ // nav
 
+    
+    border: red 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translate(30rem);
+    
+    width: 30%;
+    height: 20vh;
+    background-color: blue;
+    position: absolute;
+    top: 20vh;
+    right:0;
+   
+    @media screen and (min-width : $largeur__tablette) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
     .menu { // ul
-            display : flex;
-            list-style-type: none;
-            justify-content: flex-end;
+
+      
+
+
         .menu-item { // li
 
+          
+    
             a{
                 padding : 3px 5px;
                 text-decoration: none;
@@ -50,14 +118,8 @@
             }
 
         }
-        .menu-item::before {
-        
-            content: "";
-            background: transparent;
-            border-radius: 0;
-            padding-inline: 0;
-            margin-inline-end: 0;
-        }
+
+      
 
     }
 
