@@ -35,6 +35,7 @@ if(is_front_page()) {
             <div class="menu__recherche">
                 <?= get_search_form(); ?>  
                 <h2 class="site__description"><?= bloginfo('description'); ?></h2> <!-- permet d'extraire description de WP -->
+                <h2 class="site__titre"><?= bloginfo('titre'); ?></h2>
             </div> 
         </div>
     </header>

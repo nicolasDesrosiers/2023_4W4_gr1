@@ -1,9 +1,9 @@
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
 
 .site__entete { // logo,site dexcription,menu,bouton,recherche
-    border: yellow 1px solid;
+   
     position: relative;
-   overflow-x: hidden;
+  
 }
 
 .custom-logo-link { // logo
@@ -12,56 +12,62 @@
 }
 
 .entete__nav{  
-    border: blueviolet 1px solid;
+   
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
 /* ////////////////////////////// RECHERCHE //////////////////////////*/
 
 
-.menu__recherche { //form de recherche, site description
+.menu__recherche { //form de recherche, site description, site titre
 
-    border: 1px solid aqua;
+   
     display: flex;
-    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 1rem;
+    
+    @media screen and (min-width: $largeur__tablette) {
+        justify-content: center;
+
+    }
 
 }
 
 .site__description {
 
-    font-family: 'Righteous', cursive;
-    font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-    text-align: center;
-
-    a {
-
-        text-decoration: none;
-        color: black
-    }
+    display: none;
 }
 
+.site__titre {
+
+    display: none;
+}
 /* ////////////////////////////// BOUTON BURGER //////////////////////////*/
 
 .material-symbols-outlined { // icone burger
 
     color: white;
-    font-size: 6rem;
+    font-size: 3rem;
     position: absolute;
-    right: 0.5rem;
+    right: 0.9rem;
     top: 1.5rem;
+    @media screen and (min-width : $largeur__bureau) {
+            display: none;
+    }
 }
 
 #menu__burger:checked ~ .menu__entete {
 
     transform: translateX(0);
-
+   
 }
 
+#menu__burger {
+
+    display: none;
+}
 
 
 
@@ -71,35 +77,53 @@
 .menu__entete{ // nav
 
     
-    border: red 1px solid;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    transform: translate(30rem);
+    transform: translateX(30rem);
+    transition: 0.5s all ease;
     
-    width: 30%;
+    width: 30vw;
     height: 20vh;
-    background-color: blue;
+    
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     right:0;
-   
-    @media screen and (min-width : $largeur__tablette) {
+
+    @media screen and (min-width : $largeur__bureau) {
+        
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        position: static;
+        height: auto;
+        top: auto;
+        transform: translateX(0);
+
     }
     
 
     .menu { // ul
-
+    
+       
       
+      @media screen and (min-width : $largeur__bureau) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
 
 
         .menu-item { // li
 
-          
-    
+          position: relative;
+          transform: translateX(0);
+          transition: all 0.2s ease-in-out;
+
             a{
                 padding : 3px 5px;
                 text-decoration: none;
@@ -108,19 +132,39 @@
                 -webkit-text-stroke: 0.5px;
                 -webkit-text-stroke-color: black;
 
-                transition: all 0.5s ease;
             }
-
-            a:hover {
-
-                color: rebeccapurple;
-                
-            }
-
         }
 
-      
+        .menu-item:hover {
 
+            transform: translateX(0.5rem);
+        }
+
+
+        .menu-item::after {
+
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            top: 20%;
+            left: 1rem;
+            opacity: 0;
+            transform: translateX(0);
+            transition: all 0.2s ease-in-out;
+            
+        }
+
+        .menu-item:hover::after{
+
+            transform: translateX(-2rem);
+            opacity: 1;
+        }
+      
     }
 
 }
+

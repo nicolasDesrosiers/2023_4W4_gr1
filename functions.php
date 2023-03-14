@@ -10,7 +10,7 @@ wp_enqueue_style('4w4-gr1-principal', // id
         'all'); // media
 
 wp_enqueue_style("google_font",
-                "https://fonts.googleapis.com/css2?family=Smokum&display=swap",
+                "https://fonts.googleapis.com/css2?family=Righteous&display=swap",
                 false);       
 }  
 

@@ -398,10 +398,6 @@ ol {
   }
 }
 
-ul {
-  border: #444 solid 1px;
-}
-
 ul li,
 ol li {
   margin: 0.5rem 0rem;
@@ -414,9 +410,7 @@ li > ul {}
 /* --------------------------------------------- composant */
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
 .site__entete {
-  border: yellow 1px solid;
   position: relative;
-  overflow-x: hidden;
 }
 
 .custom-logo-link {
@@ -424,65 +418,91 @@ li > ul {}
 }
 
 .entete__nav {
-  border: blueviolet 1px solid;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* ////////////////////////////// RECHERCHE //////////////////////////*/
 .menu__recherche {
-  border: 1px solid aqua;
   display: flex;
-  flex-direction: column-reverse;
+  align-items: flex-start;
+  padding: 1rem;
+}
+@media screen and (min-width: 700px) {
+  .menu__recherche {
+    justify-content: center;
+  }
 }
 
 .site__description {
-  font-family: "Righteous", cursive;
-  font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-  text-align: center;
+  display: none;
 }
-.site__description a {
-  text-decoration: none;
-  color: black;
+
+.site__titre {
+  display: none;
 }
 
 /* ////////////////////////////// BOUTON BURGER //////////////////////////*/
 .material-symbols-outlined {
   color: white;
-  font-size: 6rem;
+  font-size: 3rem;
   position: absolute;
-  right: 0.5rem;
+  right: 0.9rem;
   top: 1.5rem;
+}
+@media screen and (min-width: 1000px) {
+  .material-symbols-outlined {
+    display: none;
+  }
 }
 
 #menu__burger:checked ~ .menu__entete {
   transform: translateX(0);
 }
 
+#menu__burger {
+  display: none;
+}
+
 /* ///////////////////////////////// Menu navigation ////////////////////////////*/
 .menu__entete {
-  border: red 1px solid;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  transform: translate(30rem);
-  width: 30%;
+  transform: translateX(30rem);
+  transition: 0.5s all ease;
+  width: 30vw;
   height: 20vh;
-  background-color: blue;
   position: absolute;
-  top: 20vh;
+  top: 10vh;
   right: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .menu__entete {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: static;
+    height: auto;
+    top: auto;
+    transform: translateX(0);
   }
+}
+@media screen and (min-width: 1000px) {
+  .menu__entete .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+.menu__entete .menu .menu-item {
+  position: relative;
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out;
 }
 .menu__entete .menu .menu-item a {
   padding: 3px 5px;
@@ -491,10 +511,27 @@ li > ul {}
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   -webkit-text-stroke: 0.5px;
   -webkit-text-stroke-color: black;
-  transition: all 0.5s ease;
 }
-.menu__entete .menu .menu-item a:hover {
-  color: rebeccapurple;
+.menu__entete .menu .menu-item:hover {
+  transform: translateX(0.5rem);
+}
+.menu__entete .menu .menu-item::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  top: 20%;
+  left: 1rem;
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out;
+}
+.menu__entete .menu .menu-item:hover::after {
+  transform: translateX(-2rem);
+  opacity: 1;
 }
 
 .blocflex {
@@ -530,23 +567,46 @@ li > ul {}
 }
 
 .recherche {
-  border: blueviolet 1px solid;
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: row-reverse;
   justify-content: center;
-  align-items: center;
-  height: 3rem;
+  align-items: flex-start;
+  position: relative;
+  border: red 1px solid;
 }
 
 .recherche__bouton {
-  padding: 0.4rem;
-  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: white;
+  border: 0;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  .recherche__bouton {
+    position: absolute;
+    right: 0vw;
+  }
 }
 
 .recherche__input {
-  width: 15rem;
-  padding: 0.5rem;
-  border-radius: 10px;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.recherche__input:focus {
+  width: 100%;
 }
 
 .erreur {
@@ -625,7 +685,7 @@ Mise en page générale avec display Grid
 
 .site__entete {
   grid-area: header;
-  background-color: antiquewhite;
+  background-color: black;
 }
 
 .site__main {
@@ -646,6 +706,7 @@ Mise en page générale avec display Grid
 /* ===================== changement général css ===================== */
 body {
   background-color: rgb(60, 60, 60);
+  overflow-x: hidden;
 }
 
 article {
