@@ -9,7 +9,7 @@
         
         gap: 7px;
         @media screen and (min-width:$largeur__bureau) {
-            flex-direction: column;
+            align-items: center;
         }
 
     .menu-item{
@@ -18,6 +18,11 @@
         justify-content: space-around;
         border: 1px solid black;
         transition: all 0.2s ease-in-out;
+        @media screen and (min-width:$largeur__bureau) {
+            padding: 0.5rem;
+            width: 3rem;
+            
+        }
         
         a{
             display : flex;

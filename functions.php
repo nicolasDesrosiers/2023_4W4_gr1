@@ -73,7 +73,7 @@ if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
 // Modifier la longueur du titre en fonction de nos besoins
 $sigle = substr($title,4,3);
 $title = substr($title, 7);
-$title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 1, ' ... ') . "</p>" ; // A modifier am.liorer pour le tp1
+$title = "<code>" .$sigle. "</code>"  ; 
 }
 return $title;
 }
