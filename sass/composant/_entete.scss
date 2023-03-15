@@ -21,19 +21,6 @@
 /* ////////////////////////////// RECHERCHE //////////////////////////*/
 
 
-.menu__recherche { //form de recherche, site description, site titre
-
-   
-    display: flex;
-    align-items: flex-start;
-    padding: 1rem;
-    
-    @media screen and (min-width: $largeur__tablette) {
-        justify-content: center;
-
-    }
-
-}
 
 .site__description {
 
