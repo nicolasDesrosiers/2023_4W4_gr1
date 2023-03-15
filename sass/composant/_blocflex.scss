@@ -1,7 +1,7 @@
 .blocflex{
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     
 }
@@ -13,6 +13,7 @@
     justify-content: center;
     margin: 1rem 1rem;
     padding: 1rem;
+    border: 3px solid black;
     background-color: rgb(95, 105, 96);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -28,9 +29,9 @@
 
 }
 
-.blocflex__article h3:hover {
+.blocflex__article h5:hover {
 
-    color: blue;
+    color:whitesmoke;
     
 }
 

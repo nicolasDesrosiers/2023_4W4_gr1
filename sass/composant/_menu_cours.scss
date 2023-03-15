@@ -1,31 +1,43 @@
 .menu-cours-container{
-
+   
     .menu{
+       
         display : flex;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        
+        gap: 7px;
         @media screen and (min-width:$largeur__bureau) {
             flex-direction: column;
         }
 
     .menu-item{
-        flex: 1 0 40px;
+        
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid black;
+        transition: all 0.2s ease-in-out;
+        
         a{
             display : flex;
             flex-direction: row; 
             justify-content: flex-start;
             align-items: center;
-            padding : 10px;
+            padding : 5px;
+            text-decoration: none;
+            color: black;
             
             @media screen and (min-width:$largeur__bureau) {
-
-
                justify-content: flex-start;
                flex-wrap: nowrap;
 
             }
-            code{
 
+            code{
+                
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+               
             }
             p{
                 display : none;
@@ -35,5 +47,14 @@
             } 
         } //a 
     } //// .menu-item   
+
+
+    .menu-item:hover {
+        transform: translateY(-0.4rem);
+        background-color: whitesmoke;
+        box-shadow: 3px 6px 5px;
+       
+    }
+
 } // .menu
 } //.menu-cours-container

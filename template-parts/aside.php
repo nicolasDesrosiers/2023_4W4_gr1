@@ -4,7 +4,7 @@
 
 <aside class="site__aside">
     
-        <h3>Menu Secondaire</h3>
+        <h3>Menu</h3>
        <?php 
             $menu = "note-4w4";
             if(in_category('cours')){ $menu='cours';}

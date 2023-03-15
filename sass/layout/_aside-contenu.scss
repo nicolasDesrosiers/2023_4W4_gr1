@@ -47,7 +47,7 @@ Mise en page générale avec display Grid
 
     grid-area: main;
     // padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(215, 222, 250);
+    background-color:whitesmoke;
 }
 
 .site__footer{
@@ -58,8 +58,26 @@ Mise en page générale avec display Grid
 }
 
 .site__aside{
-
+    
+    h3{
+        text-align: center;
+    }
+    height: 2rem;
     grid-area: aside;
-    //padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(250, 215, 215);
+    transition: all 0.2s;
+    background-color: rgb(95, 105, 96);
+    @media screen and (min-width: $largeur__bureau) {
+        height: auto;
+       
+    }
+}
+
+.site__aside:hover {
+
+    height: 15rem;
+
+    @media screen and (min-width : $largeur__bureau) {
+        
+        height: auto;
+    }
 }
