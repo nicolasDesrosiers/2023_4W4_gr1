@@ -1,0 +1,26 @@
+pre {
+
+    display: none;
+}
+
+h1 {
+ display: none;
+}
+
+.article_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.article_post h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+.article_post p {
+    width: 70vw;
+}
+

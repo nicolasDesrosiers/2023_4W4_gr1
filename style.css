@@ -356,7 +356,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2, h3 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   color: rgb(95, 105, 96);
@@ -364,7 +364,6 @@ h2 {
   -webkit-text-stroke-color: black;
 }
 
-h3,
 h4,
 h5,
 h6 {
@@ -812,6 +811,10 @@ li > ul {}
 .menu-note-4w4-container .menu .menu-item a code {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+.menu-note-4w4-container .menu .menu-item a code::first-letter {
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
 .menu-note-4w4-container .menu .menu-item a p {
   display: none;
 }
@@ -824,6 +827,30 @@ li > ul {}
   transform: translateY(-0.4rem);
   background-color: whitesmoke;
   box-shadow: 3px 6px 5px;
+}
+
+pre {
+  display: none;
+}
+
+h1 {
+  display: none;
+}
+
+.article_post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_post h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.article_post p {
+  width: 70vw;
 }
 
 /* --------------------------------------------- composant */
@@ -875,6 +902,11 @@ Mise en page générale avec display Grid
 }
 .site__aside h3 {
   text-align: center;
+  color: whitesmoke;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  border-bottom: whitesmoke 3px solid;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 1000px) {
   .site__aside {
@@ -899,6 +931,7 @@ body {
 
 article {
   flex: 1 0 250px;
+  padding: 5px;
   margin: 20px;
 }
 

@@ -64,6 +64,12 @@ Mise en page générale avec display Grid
     
     h3{
         text-align: center;
+        color: whitesmoke;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+        border-bottom: whitesmoke 3px solid;
+        padding-bottom: 1rem;
+        
     }
     height: 2rem;
     grid-area: aside;
