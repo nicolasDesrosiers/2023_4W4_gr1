@@ -11,9 +11,9 @@
     </section>
 
     <section class="lien"> <?php wp_nav_menu(array(
-                    "menu" => "entete",
+                    "menu" => "liens",
                     "container" => "nav",
-                    "container_class" => "menu__entete")); ?>
+                    "container_class" => "menu__liens")); ?>
     </section>
 
 

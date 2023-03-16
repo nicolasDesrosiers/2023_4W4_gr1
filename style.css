@@ -857,6 +857,29 @@ h1 {
   align-items: center;
 }
 
+.menu__liens ul li a {
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.538);
+}
+
+.menu__liens ul li a:hover {
+  color: whitesmoke;
+}
+
+.menu__liens ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .menu__liens ul {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+  }
+}
+
 /* --------------------------------------------- composant */
 /**
 Mise en page générale avec display Grid
