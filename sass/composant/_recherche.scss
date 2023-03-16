@@ -1,6 +1,7 @@
 .recherche{
   
    padding: 1rem;
+ 
 }
 
 .recherche__bouton {
@@ -19,9 +20,8 @@
     width: 170px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 25px;
     font-size: 16px;
-    background-color: white;
+    background-color:  rgba(255, 255, 255, 0.15);
     background-position: 20px 20px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;

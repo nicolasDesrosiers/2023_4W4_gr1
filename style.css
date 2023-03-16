@@ -604,6 +604,62 @@ li > ul {}
   display: none;
 }
 
+.blocflex__article_note {
+  position: relative;
+  display: flex;
+  height: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  border: 3px solid black;
+  background-color: rgb(95, 105, 96);
+  box-shadow: rgba(0, 0, 0, 0.4) 5px 7px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.blocflex__article_note p {
+  display: none;
+}
+
+.blocflex__article_note h5 a {
+  color: black;
+}
+
+.blocflex__article_note h5:hover a {
+  color: whitesmoke;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.blocflex__article_note h5 {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.blocflex__article_note h5:hover {
+  color: black;
+  transform: translateY(-2vh);
+}
+
+.blocflex__article_note h5::after {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.blocflex__article_note h5:hover::after {
+  opacity: 1;
+  transform: translateY(5vh);
+}
+
 .blocflex__galerie {
   flex: 1 0 90%;
 }
@@ -626,9 +682,8 @@ li > ul {}
   width: 170px;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 25px;
   font-size: 16px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.15);
   background-position: 20px 20px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -714,7 +769,7 @@ li > ul {}
   box-shadow: 3px 6px 5px;
 }
 
-.menu-cours-container .menu {
+.menu-note-4w4-container .menu {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -722,23 +777,17 @@ li > ul {}
   gap: 7px;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu {
-    align-items: center;
+  .menu-note-4w4-container .menu {
+    flex-direction: column;
   }
 }
-.menu-cours-container .menu .menu-item {
+.menu-note-4w4-container .menu .menu-item {
   display: flex;
   justify-content: space-around;
   border: 1px solid black;
   transition: all 0.2s ease-in-out;
 }
-@media screen and (min-width: 1000px) {
-  .menu-cours-container .menu .menu-item {
-    padding: 0.5rem;
-    width: 3rem;
-  }
-}
-.menu-cours-container .menu .menu-item a {
+.menu-note-4w4-container .menu .menu-item a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -748,23 +797,23 @@ li > ul {}
   color: black;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu .menu-item a {
+  .menu-note-4w4-container .menu .menu-item a {
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
 }
-.menu-cours-container .menu .menu-item a code {
+.menu-note-4w4-container .menu .menu-item a code {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.menu-cours-container .menu .menu-item a p {
+.menu-note-4w4-container .menu .menu-item a p {
   display: none;
 }
 @media screen and (min-width: 1000px) {
-  .menu-cours-container .menu .menu-item a p {
+  .menu-note-4w4-container .menu .menu-item a p {
     display: block;
   }
 }
-.menu-cours-container .menu .menu-item:hover {
+.menu-note-4w4-container .menu .menu-item:hover {
   transform: translateY(-0.4rem);
   background-color: whitesmoke;
   box-shadow: 3px 6px 5px;
@@ -798,7 +847,7 @@ Mise en page générale avec display Grid
 
 .site__entete {
   grid-area: header;
-  background-color: black;
+  background-color: transparent;
 }
 
 .site__main {

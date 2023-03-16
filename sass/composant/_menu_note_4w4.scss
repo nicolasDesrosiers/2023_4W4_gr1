@@ -1,4 +1,4 @@
-.menu-cours-container{
+.menu-note-4w4-container{
    
     .menu{
        
@@ -9,7 +9,7 @@
         
         gap: 7px;
         @media screen and (min-width:$largeur__bureau) {
-            align-items: center;
+            flex-direction: column;
         }
 
     .menu-item{
@@ -19,9 +19,7 @@
         border: 1px solid black;
         transition: all 0.2s ease-in-out;
         @media screen and (min-width:$largeur__bureau) {
-            padding: 0.5rem;
-            width: 3rem;
-            
+          
         }
         
         a{
