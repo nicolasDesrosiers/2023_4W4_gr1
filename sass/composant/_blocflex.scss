@@ -173,9 +173,11 @@
 /////////////////////////////// BLOCFLEX DES ARTICLES DE LA GALERIE /////////////////////////////////
 
 .blocflex__galerie {
-
     flex: 1 0 90%;
-
+    padding: 1rem;
 }
 
-
+figure figure{
+   border: black 2px solid; 
+   box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.185);
+}
