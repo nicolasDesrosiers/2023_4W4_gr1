@@ -1,6 +1,6 @@
-/**
-Mise en page générale avec display Grid
-*/
+
+/////////////Mise en page générale avec display Grid ///////////////////////////
+
 
 .site{
 
@@ -22,7 +22,7 @@ Mise en page générale avec display Grid
     }
 }
 
-
+/////////////Mise en page générale avec display Grid quand il n'y a pas d'aside 
 
 .no-aside {
 
@@ -40,11 +40,15 @@ Mise en page générale avec display Grid
 
 }
 
+/////////////Mise en page de l'entete ///////////////////////////
+
 .site__entete{
 
     grid-area: header;
     background-color: transparent;
 }
+
+/////////////Mise en page du main  ///////////////////////////////
 
 .site__main{
 
@@ -52,6 +56,8 @@ Mise en page générale avec display Grid
     // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color:whitesmoke;
 }
+
+/////////////Mise en page du footer ///////////////////////////
 
 .site__footer{
 
@@ -64,6 +70,8 @@ Mise en page générale avec display Grid
     align-items: center;
     padding-right: 2rem;
 }
+
+/////////////Mise en page de l'aside ///////////////////////////
 
 .site__aside{
     

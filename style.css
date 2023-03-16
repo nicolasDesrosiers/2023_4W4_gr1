@@ -881,9 +881,6 @@ h1 {
 }
 
 /* --------------------------------------------- composant */
-/**
-Mise en page générale avec display Grid
-*/
 .site {
   display: grid;
   grid-template-columns: auto;

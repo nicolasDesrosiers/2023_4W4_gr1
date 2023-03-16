@@ -7,20 +7,21 @@ h1 {
  display: none;
 }
 
-.article_post {
+
+.article_post { // article lorsque l'on clique dessus
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-.article_post h3 {
+.article_post h3 { // sous-titre
     text-align: center;
     padding-bottom: 1rem;
 
 }
 
-.article_post p {
+.article_post p { // texte
     width: 70vw;
 }
 
