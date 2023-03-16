@@ -33,6 +33,9 @@
 
 .recherche__input:focus {
     width: 70vw;
+    @media screen and (min-width:$largeur__bureau) {
+        width: 95vw;
+    }
 }
 
 

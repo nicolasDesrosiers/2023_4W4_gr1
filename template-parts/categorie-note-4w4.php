@@ -7,6 +7,7 @@
 $titre = get_the_title();
 if(substr($titre,0,1)== '0'){
 
+    $titre = substr($titre,3,18);
     //retirer le premier zero du titre d'article de categorie note-4w4
 }
 ?>
