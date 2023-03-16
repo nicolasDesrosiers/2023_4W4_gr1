@@ -21,7 +21,7 @@
                 'orderby' => 'title',
                 'order' => 'ASC'
             );
-            //création d'uen nouvelle reqête
+            //création d'une nouvelle reqête
             $query = new WP_Query( $args );
 
             // Tout le reste de l'extraction de données est basée sur la nouvelle requete

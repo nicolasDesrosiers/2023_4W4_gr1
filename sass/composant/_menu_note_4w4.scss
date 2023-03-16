@@ -15,8 +15,10 @@
     .menu-item{
         
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         border: 1px solid black;
+        padding: 0.3rem;
+        width: 10rem;
         transition: all 0.2s ease-in-out;
         @media screen and (min-width:$largeur__bureau) {
           
