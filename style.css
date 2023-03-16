@@ -404,13 +404,7 @@ ol {
 ul li,
 ol li {
   margin: 0.5rem 0rem;
-}
-
-/*
-li > ol {}
-li > ul {}
-*/
-/* --------------------------------------------- composant */
+} /* --------------------------------------------- composant */
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
 .site__entete {
   position: relative;
@@ -690,6 +684,7 @@ li > ul {}
   background-color: rgba(255, 255, 255, 0.15);
   background-position: 20px 20px;
   background-repeat: no-repeat;
+  border-radius: 5px;
   padding: 12px 20px 12px 40px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
@@ -776,6 +771,7 @@ li > ul {}
 .menu-note-4w4-container .menu {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 7px;
@@ -853,6 +849,14 @@ h1 {
   width: 70vw;
 }
 
+.site__footer .info ul {
+  color: rgba(245, 245, 245, 0.538);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* --------------------------------------------- composant */
 /**
 Mise en page générale avec display Grid
@@ -891,7 +895,12 @@ Mise en page générale avec display Grid
 
 .site__footer {
   grid-area: footer;
-  background-color: rgb(168, 168, 168);
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
 }
 
 .site__aside {

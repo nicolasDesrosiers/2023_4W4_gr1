@@ -57,7 +57,12 @@ Mise en page générale avec display Grid
 
     grid-area: footer;
     //padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(168, 168, 168);
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
 }
 
 .site__aside{
