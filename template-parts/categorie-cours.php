@@ -16,4 +16,7 @@ $duree = substr($titre,-5);
         <h6><a href="<?php the_permalink(); ?>"><?= $titre_long; ?></a></h6>
         <h6><?= $duree; ?></h6>
     </div>
+   <p><?php the_field('enseignant'); ?></p>
+   <p><?php the_field('domaine'); ?></p>
+    
 </article>

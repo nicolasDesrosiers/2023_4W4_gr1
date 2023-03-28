@@ -388,14 +388,14 @@ ol {
 }
 @media screen and (min-width: 400px) {
   ul,
-ol {
+  ol {
     margin: 1rem 0.5rem;
     padding: 0 13px;
   }
 }
 @media screen and (min-width: 700px) {
   ul,
-ol {
+  ol {
     margin: 1rem 0.5rem;
     padding: 0 15px;
   }
@@ -404,7 +404,9 @@ ol {
 ul li,
 ol li {
   margin: 0.5rem 0rem;
-} /* --------------------------------------------- composant */
+}
+
+/* --------------------------------------------- composant */
 /* ////////////////////////////// Conteneur du menu //////////////////////////*/
 .site__entete {
   position: relative;
