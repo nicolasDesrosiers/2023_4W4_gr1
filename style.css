@@ -715,7 +715,7 @@ figure figure {
   justify-content: center;
 }
 
-.erreur h1 {
+.erreur h4 {
   color: red;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }

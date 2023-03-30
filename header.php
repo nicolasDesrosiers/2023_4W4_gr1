@@ -14,9 +14,10 @@
 
 <?php 
 $nouvel_class="";
-if(is_front_page()) {
+if(is_front_page() ) {
     $nouvel_class = "no-aside";
-}?>
+} 
+?>
 
 <body class="custom-background site <?= $nouvel_class ?>">
     <header class="site__entete">
