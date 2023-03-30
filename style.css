@@ -708,7 +708,7 @@ figure figure {
 }
 
 .erreur {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.3);
   display: flex;
   justify-content: center;
 }
@@ -716,6 +716,9 @@ figure figure {
 .erreur__404 {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .erreur__recherche {
@@ -730,6 +733,7 @@ figure figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .notes__cours {
@@ -737,6 +741,18 @@ figure figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.notes__cours ul, .choix__cours ul {
+  gap: 1rem;
+}
+
+.notes__cours ul a, .choix__cours ul a {
+  color: black;
+}
+
+.notes__cours ul a:hover, .choix__cours ul a:hover {
+  color: blue;
 }
 
 .menu {

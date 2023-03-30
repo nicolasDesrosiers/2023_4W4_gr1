@@ -12,7 +12,10 @@
 			
 			<div class="erreur__recherche">
 				<p>Page introuvable, vous pouvez tentez une nouvelle recherche</p>
-				<?php get_search_form(); ?>
+                <div class="recherche__formulaire">
+                  <?php get_search_form(); ?>
+                </div>
+				
             </div>  
 
             <div class="choix__cours">
