@@ -5,6 +5,8 @@
     justify-content: center;
    
 }
+
+
 .erreur__404 {
 
     display: flex;
@@ -14,6 +16,12 @@
     padding: 1rem;
 }
 
+.erreur__404 h3 {
+
+    font-size: 4rem;
+    color: red;
+}
+
 
 .erreur__recherche {
 
@@ -21,6 +29,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.erreur__recherche p {
+
+  font-size: 1rem;
+  @media screen and (min-width: $largeur__bureau) {
+    
+    font-size: 2rem;
+  }
+}
+
+.recherche__input::placeholder{
+
+color: black;
 }
 
 .choix__cours {
@@ -65,3 +86,11 @@
    
 }
 
+.erreur__404 h4 {
+
+    font-size: 1rem;
+    @media screen and (min-width:$largeur__bureau) {
+        
+        font-size: 2rem;
+    }
+}

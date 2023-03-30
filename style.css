@@ -721,11 +721,29 @@ figure figure {
   padding: 1rem;
 }
 
+.erreur__404 h3 {
+  font-size: 4rem;
+  color: red;
+}
+
 .erreur__recherche {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.erreur__recherche p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .erreur__recherche p {
+    font-size: 2rem;
+  }
+}
+
+.recherche__input::placeholder {
+  color: black;
 }
 
 .choix__cours {
@@ -759,6 +777,15 @@ figure figure {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.erreur__404 h4 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .erreur__404 h4 {
+    font-size: 2rem;
+  }
 }
 
 .menu-cours-container .menu {
