@@ -5,10 +5,41 @@
     justify-content: center;
    
 }
+.erreur__404 {
 
-.h3{
+    display: flex;
+    flex-direction: column;
+}
 
-    color: red;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.erreur__recherche {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choix__cours {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes__cours {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 

@@ -713,9 +713,36 @@ figure figure {
   justify-content: center;
 }
 
-.h3 {
-  color: red;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+.erreur__404 {
+  display: flex;
+  flex-direction: column;
+}
+
+.erreur__recherche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choix__cours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes__cours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .menu-cours-container .menu {

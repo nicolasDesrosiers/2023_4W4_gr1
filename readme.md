@@ -1,8 +1,8 @@
-# TP1
+#   Examen Intra 
  ## 4W4-Conception d'interfaces et développement Web
  ### Auteur : Nicolas Carrière
 
- ## L\'objectif du TP1:
+ ## L\'objectif examen intra
 
  - Le design général permettra de mettre en valeur le progamme TIM du collège de Maisonneuve
  - Continuer de faire progresser votre thème
@@ -11,9 +11,7 @@
  #### Liens de référence
  - Site sur le serveur Web distant **siteground**
      - https://cidweb26.sg-host.com/
- - Site GitHub
-      -  https://github.com/nicolasDesrosiers/2023_4w4_gr1    
-
+   
 
  ### Ce projet permet d'améliorer globalement le site en y intégrant les éléments suivants:
 
