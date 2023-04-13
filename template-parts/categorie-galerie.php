@@ -7,4 +7,8 @@
 ?>
 <article class="blocflex__galerie">
     <?php the_content();?>
+    <p><?php the_field('reference') ?></p>
+    <p><?php the_field('date_heure') ?></p>
+    
+
 </article>

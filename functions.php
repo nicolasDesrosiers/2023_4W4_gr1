@@ -14,11 +14,6 @@ wp_enqueue_style("google_font",
                 false);       
 }  
 
-
-
-
-
-
 add_action( 'wp_enqueue_scripts', 'enfiler_css' );  
 
 /* -------------------------------------- Enregitrement des menus */
