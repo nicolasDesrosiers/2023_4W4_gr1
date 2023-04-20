@@ -991,7 +991,7 @@ h1 {
 
 .site__footer {
   grid-area: footer;
-  background-color: black;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
