@@ -1,33 +1,67 @@
-.site__footer .info ul {
+.site__footer {
 
-   color: rgba(245, 245, 245, 0.538);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-  
-}
-
-.menu__liens ul li a  {
-
-   text-decoration: none;
-   color:  rgba(245, 245, 245, 0.538);
-
-}
-.menu__liens ul li a:hover  {
-
-    color: whitesmoke;
-
-}
-
-.menu__liens ul {
+    grid-area: footer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    @media screen and (min-width: $largeur__tablette) {
-        flex-direction: row;
+    border: red 1px solid;
+
+
+    .colonne {
+
+        display: flex;
         justify-content: space-between;
-        width: 30vw;
-       }
+        width: 100vw;
+        padding: 1rem;
+
+        .lien {
+            
+            .menu__liens{
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        a {color: #aaa;}  
+                        a:hover {color: rgb(12, 136, 177);}
+                    }
+                }
+                
+            }
+        }
+        
+        .info {
+
+            text-align: center;
+            li { color:#aaa }
+        }
+
+        .footer_colonne {
+            
+            width: 30%;
+            
+            div {
+                div{
+                    ul {
+                        li{
+                            a{
+                                color: #aaa;
+                            }
+                        }
+                    }
+                }
+                #block-17 {
+
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+
+
+
+
 }

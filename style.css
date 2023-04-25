@@ -526,6 +526,7 @@ ol li {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .blocflex__article {
@@ -668,6 +669,13 @@ ol li {
 figure figure {
   border: black 2px solid;
   box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.185);
+}
+
+.blocflex .evenement {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .recherche {
@@ -844,6 +852,21 @@ figure figure {
   box-shadow: 3px 6px 5px;
 }
 
+.menu__evenement {
+  background-color: transparent;
+}
+.menu__evenement .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__evenement .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  height: 100px;
+  margin: 1rem;
+}
+
 .menu-note-4w4-container .menu {
   display: flex;
   justify-content: center;
@@ -925,35 +948,44 @@ h1 {
   width: 70vw;
 }
 
-.site__footer .info ul {
-  color: rgba(245, 245, 245, 0.538);
+.site__footer {
+  grid-area: footer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  border: red 1px solid;
 }
-
-.menu__liens ul li a {
-  text-decoration: none;
-  color: rgba(245, 245, 245, 0.538);
+.site__footer .colonne {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 1rem;
 }
-
-.menu__liens ul li a:hover {
-  color: whitesmoke;
-}
-
-.menu__liens ul {
+.site__footer .colonne .lien .menu__liens ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-@media screen and (min-width: 700px) {
-  .menu__liens ul {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 30vw;
-  }
+.site__footer .colonne .lien .menu__liens ul li a {
+  color: #aaa;
+}
+.site__footer .colonne .lien .menu__liens ul li a:hover {
+  color: rgb(12, 136, 177);
+}
+.site__footer .colonne .info {
+  text-align: center;
+}
+.site__footer .colonne .info li {
+  color: #aaa;
+}
+.site__footer .colonne .footer_colonne {
+  width: 30%;
+}
+.site__footer .colonne .footer_colonne div div ul li a {
+  color: #aaa;
+}
+.site__footer .colonne .footer_colonne div #block-17 {
+  display: flex;
+  justify-content: center;
 }
 
 /* --------------------------------------------- composant */
@@ -987,16 +1019,6 @@ h1 {
 .site__main {
   grid-area: main;
   background-color: whitesmoke;
-}
-
-.site__footer {
-  grid-area: footer;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 2rem;
 }
 
 .site__aside {
