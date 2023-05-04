@@ -32,8 +32,11 @@ add_theme_support( 'custom-logo', array(
     'height' => 150,
     'width'  => 150
 ) );
-add_theme_support('custom-background');
+add_theme_support('custom-background'); // permet d'utiliser limage arriere plan dans personnalisé (WP)
 
+add_theme_support( 'post-thumbnails' ); // images-mise-en-avant qui peuvent être dimensionnée en plusieurs grandeur.
+
+set_post_thumbnail_size( 150, 150, true ); // 150 pixels wide by 150 pixels tall, true = crop mode
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

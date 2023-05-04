@@ -15,6 +15,18 @@ if(substr($titre,0,1)== '0'){
 <article class="blocflex__article_note">
     <h5><a href="<?php the_permalink(); ?>"> <?=$titre;?></a></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15, " ... ") ?></p>
+        
+<?php // check if the post or page has a Featured Image assigned to it.
+
+if ( has_post_thumbnail() ) {
+    the_post_thumbnail(array( 100 ,100  ));
+    }
+    else {
+   echo get_the_post_thumbnail(29,array(100,100)); // va cherche le ID de la photo
+} 
+
+echo get_the_ID()
+?>
 </article>
 
 

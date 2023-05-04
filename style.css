@@ -532,7 +532,7 @@ ol li {
 .blocflex__article {
   position: relative;
   display: flex;
-  height: 4rem;
+  height: 5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -603,7 +603,7 @@ ol li {
 .blocflex__article_note {
   position: relative;
   display: flex;
-  height: 4rem;
+  height: 14rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -669,13 +669,6 @@ ol li {
 figure figure {
   border: black 2px solid;
   box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.185);
-}
-
-.blocflex .evenement {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  min-height: 100vh;
 }
 
 .recherche {

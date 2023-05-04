@@ -14,7 +14,7 @@
 
     position: relative;
     display: flex;
-    height: 4rem;
+    height: 5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@
 
     position: relative;
     display: flex;
-    height: 4rem;
+    height: 14rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -184,12 +184,3 @@ figure figure{
 }
 
 
-
-
-.blocflex .evenement {
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    min-height: 100vh;
-}

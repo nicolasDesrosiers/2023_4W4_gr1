@@ -23,7 +23,6 @@
                          $la_categorie = 'note-4w4';
                          if(in_category("galerie")) {
                             $la_categorie = 'galerie';}
-                            
                             get_template_part("template-parts/categorie",$la_categorie); ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
