@@ -7,15 +7,28 @@
     <?php get_header(); ?>
 
         <main class="site__main">
+
             <h1>Bienvenue sur 4W4</h1>
+
             <h2>Les événements à venir</h2>
+
             <section class="blocflex">
                <?php wp_nav_menu(array(
                     "menu" => "evenement",
                     "container" => "nav",
                     "container_class" => "menu__evenement")); ?> 
+            </section>
 
-               </section>
+            <h2>Les activités du TIM</h2>
+
+            <section class="blocflex">
+               <?php wp_nav_menu(array(
+                    "menu" => "activiter",
+                    "container" => "nav",
+                    "container_class" => "menu__activiter")); ?> 
+            </section>
+
+
             <section class="blocflex">
             <?php 
                 if (have_posts()):
