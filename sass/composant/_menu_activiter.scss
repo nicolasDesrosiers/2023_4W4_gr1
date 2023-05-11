@@ -1,0 +1,47 @@
+.menu__activiter { //nav
+
+    background-color: transparent;
+
+    .menu { //ul
+
+        display: flex;
+        justify-content: space-between;
+
+
+        .menu-item{//li
+
+            display: flex;
+            flex-direction: column;
+            
+            border: 1px solid #aaa;
+            height: auto;
+            margin: 1rem;
+
+            a{
+               
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #aaa;
+                align-items: center;
+                text-align: center;
+
+                .title {
+
+                    font-size: 1.5rem;
+                }
+                .description {
+
+                    font-size: .8rem;
+                }
+                .menu-thumbnail{
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+        }
+
+    }
+
+}

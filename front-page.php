@@ -10,24 +10,33 @@
 
             <h1>Bienvenue sur 4W4</h1>
 
-            <h2>Les événements à venir</h2>
+            
 
             <section class="blocflex">
-               <?php wp_nav_menu(array(
-                    "menu" => "evenement",
-                    "container" => "nav",
-                    "container_class" => "menu__evenement")); ?> 
+
+               <div class="section__evenement">
+                    <h2>Les événements à venir</h2>
+
+                    <?php wp_nav_menu(array(
+                            "menu" => "evenement",
+                            "container" => "nav",
+                            "container_class" => "menu__evenement")); ?> 
+               </div>
+               
+               <div class="section__activiter">
+                    <h2>Les activités du TIM</h2>
+
+                    <section class="blocflex">
+                    <?php wp_nav_menu(array(
+                            "menu" => "activiter",
+                            "container" => "nav",
+                            "container_class" => "menu__activiter")); ?> 
+                    </section>
+               </div>
+                
             </section>
 
-            <h2>Les activités du TIM</h2>
-
-            <section class="blocflex">
-               <?php wp_nav_menu(array(
-                    "menu" => "activiter",
-                    "container" => "nav",
-                    "container_class" => "menu__activiter")); ?> 
-            </section>
-
+           
 
             <section class="blocflex">
             <?php 

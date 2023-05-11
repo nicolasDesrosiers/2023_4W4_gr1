@@ -878,6 +878,39 @@ figure figure {
   height: 150px;
 }
 
+.menu__activiter {
+  background-color: transparent;
+}
+.menu__activiter .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__activiter .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  height: auto;
+  margin: 1rem;
+}
+.menu__activiter .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  align-items: center;
+  text-align: center;
+}
+.menu__activiter .menu .menu-item a .title {
+  font-size: 1.5rem;
+}
+.menu__activiter .menu .menu-item a .description {
+  font-size: 0.8rem;
+}
+.menu__activiter .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
 .menu-note-4w4-container .menu {
   display: flex;
   justify-content: center;
