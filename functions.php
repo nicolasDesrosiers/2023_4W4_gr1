@@ -50,7 +50,7 @@ function cidweb_modifie_requete_principal( $query ) {
                 && $query->is_main_query() // si requête principale
                 && ! is_admin() ) { // si pas dans le tableau de bord
           // $query->set permet de modifier la requête principale               
-          $query->set( 'category_name', 'note-4w4' ); // filtre les articles de categorie «4w4» slug
+          $query->set( 'category_name', 'acceuil' ); // filtre les articles de categorie «4w4» slug
           $query->set( 'orderby', 'title' ); // trier selon le champ title
           $query->set( 'order', 'ASC' ); // trier en ordre ascendant
           }
@@ -86,7 +86,9 @@ add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
  * Ajouter la description et l'image mise en avant a chacun des choix du menu évènement 
  */
 function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args ) {
-        if ( 'evenement'  == $args->menu || 'activiter' == $args->menu) {
+        if ( 'evenement'  == $args->menu ||
+             'activiter' == $args->menu|| 
+             'bloc-archives' == $args->menu ) {
             $post_thumbnail_id = get_post_thumbnail_id( $item->object_id );
             if ( $post_thumbnail_id ) {
                 $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );

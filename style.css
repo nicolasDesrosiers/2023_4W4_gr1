@@ -526,7 +526,7 @@ ol li {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 30vh;
 }
 
 .blocflex__article {
@@ -906,6 +906,39 @@ figure figure {
   font-size: 0.8rem;
 }
 .menu__activiter .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.menu__archives {
+  background-color: transparent;
+}
+.menu__archives .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__archives .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  height: auto;
+  margin: 1rem;
+}
+.menu__archives .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  align-items: center;
+  text-align: center;
+}
+.menu__archives .menu .menu-item a .title {
+  font-size: 1.5rem;
+}
+.menu__archives .menu .menu-item a .description {
+  font-size: 0.8rem;
+}
+.menu__archives .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 150px;

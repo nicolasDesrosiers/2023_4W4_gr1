@@ -33,6 +33,18 @@
                             "container_class" => "menu__activiter")); ?> 
                     </section>
                </div>
+
+               <div class="section__archives">
+                    <h2>Archives</h2>
+
+                    <section class="blocflex">
+                    <?php wp_nav_menu(array(
+                            "menu" => "bloc-archives",
+                            "container" => "nav",
+                            "container_class" => "menu__archives")); ?> 
+                    </section>
+               </div>
+               
                 
             </section>
 
@@ -45,6 +57,8 @@
                          $la_categorie = 'note-4w4';
                          if(in_category("galerie")) {
                             $la_categorie = 'galerie';}
+                         if(in_category("cours")) {
+                            $la_categorie = 'cours';}
                             get_template_part("template-parts/categorie",$la_categorie); ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
