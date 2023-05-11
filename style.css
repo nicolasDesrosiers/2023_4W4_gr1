@@ -662,7 +662,7 @@ ol li {
 }
 
 .blocflex__galerie {
-  flex: 1 0 90%;
+  flex: 1 0 80%;
   padding: 1rem;
 }
 
@@ -964,13 +964,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: red 1px solid;
 }
 .site__footer .colonne {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   padding: 1rem;
+}
+.site__footer .colonne .lien {
+  padding-right: 1rem;
 }
 .site__footer .colonne .lien .menu__liens ul {
   display: flex;
@@ -990,6 +992,7 @@ h1 {
 }
 .site__footer .colonne .footer_colonne {
   width: 30%;
+  padding-right: 1rem;
 }
 .site__footer .colonne .footer_colonne div div ul li a {
   color: #aaa;
@@ -1063,8 +1066,9 @@ h1 {
 }
 
 /* ===================== changement général css ===================== */
-body {
+html, body {
   background-color: rgb(60, 60, 60);
+  max-width: 100vw;
   overflow-x: hidden;
 }
 

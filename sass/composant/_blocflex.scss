@@ -7,6 +7,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     min-height: 100vh;
+  
     
 }
 
@@ -174,8 +175,9 @@
 /////////////////////////////// BLOCFLEX DES ARTICLES DE LA GALERIE /////////////////////////////////
 
 .blocflex__galerie {
-    flex: 1 0 90%;
+    flex: 1 0 80%;
     padding: 1rem;
+
 }
 
 figure figure{

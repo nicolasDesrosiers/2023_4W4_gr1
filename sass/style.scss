@@ -43,11 +43,13 @@ Text Domain: 4W4_Nicolas_Carriere
 
 /* ===================== changement général css ===================== */
 
-body{
+html,body{
  
   background-color: rgb(60, 60, 60);
+  max-width: 100vw;
   overflow-x: hidden;
-  
+
+
 }
 
 article{
