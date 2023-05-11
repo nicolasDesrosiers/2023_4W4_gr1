@@ -856,8 +856,26 @@ figure figure {
   display: flex;
   flex-direction: column;
   border: 1px solid #aaa;
-  height: 100px;
+  height: auto;
   margin: 1rem;
+}
+.menu__evenement .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  align-items: center;
+  text-align: center;
+}
+.menu__evenement .menu .menu-item a .title {
+  font-size: 1.5rem;
+}
+.menu__evenement .menu .menu-item a .description {
+  font-size: 0.8rem;
+}
+.menu__evenement .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
 }
 
 .menu-note-4w4-container .menu {
