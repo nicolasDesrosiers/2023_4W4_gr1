@@ -850,7 +850,7 @@ figure figure {
 }
 .menu__evenement .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .menu__evenement .menu .menu-item {
   display: flex;
@@ -862,35 +862,41 @@ figure figure {
 .menu__evenement .menu .menu-item a {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
   align-items: center;
   text-align: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 .menu__evenement .menu .menu-item a .title {
   font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
 }
 .menu__evenement .menu .menu-item a .description {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 35%;
+  z-index: 10;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .menu__evenement .menu .menu-item a .menu-thumbnail {
   display: block;
-  width: 150px;
-  height: 150px;
-}
-
-.img__archive {
-  width: 80%;
-  height: 50px;
+  width: 350px;
+  height: 200px;
   object-fit: cover;
-  background-repeat: no-repeat;
 }
-
-.bloc__cours .img__archive {
-  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
+.menu__evenement .menu .menu-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  width: 350px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.37);
 }
-
-.bloc__notes .img__archive {
-  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=briefcase);
+.menu__evenement .menu .menu-item a:hover {
+  scale: 1.1;
 }
 
 .menu__activiter {
@@ -898,7 +904,7 @@ figure figure {
 }
 .menu__activiter .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .menu__activiter .menu .menu-item {
   display: flex;
@@ -910,20 +916,42 @@ figure figure {
 .menu__activiter .menu .menu-item a {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
   align-items: center;
   text-align: center;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 .menu__activiter .menu .menu-item a .title {
   font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
 }
 .menu__activiter .menu .menu-item a .description {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 35%;
+  z-index: 10;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .menu__activiter .menu .menu-item a .menu-thumbnail {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  object-fit: cover;
+}
+.menu__activiter .menu .menu-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  width: 350px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+.menu__activiter .menu .menu-item a:hover {
+  scale: 1.1;
 }
 
 .menu__archives {
@@ -931,7 +959,7 @@ figure figure {
 }
 .menu__archives .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .menu__archives .menu .menu-item {
   display: flex;
@@ -939,6 +967,8 @@ figure figure {
   border: 1px solid #aaa;
   height: auto;
   margin: 1rem;
+  width: 40rem;
+  height: 10rem;
 }
 .menu__archives .menu .menu-item a {
   display: flex;
@@ -946,6 +976,7 @@ figure figure {
   border: 1px solid #aaa;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 .menu__archives .menu .menu-item a .title {
   font-size: 1.5rem;
@@ -957,6 +988,23 @@ figure figure {
   display: block;
   width: 150px;
   height: 150px;
+}
+
+.img__archive {
+  width: 10%;
+  height: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -3rem;
+}
+
+.bloc__cours .img__archive {
+  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
+}
+
+.bloc__notes .img__archive {
+  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=briefcase);
 }
 
 .menu-note-4w4-container .menu {
@@ -1081,6 +1129,26 @@ h1 {
 .site__footer .colonne .footer_colonne div #block-17 {
   display: flex;
   justify-content: center;
+}
+
+.site__main.evenement {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.site__main.evenement h1 {
+  display: block;
+}
+.site__main.evenement .image__evenement {
+  height: 20rem;
+  width: 74vw;
+}
+.site__main.evenement .wp-post-image {
+  object-fit: cover;
+  height: 20rem;
+  width: 74vw;
 }
 
 /* --------------------------------------------- composant */

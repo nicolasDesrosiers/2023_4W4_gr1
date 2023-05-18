@@ -12,18 +12,20 @@
 
             display: flex;
             flex-direction: column;
-            
             border: 1px solid #aaa;
             height: auto;
             margin: 1rem;
+            width: 40rem;
+            height: 10rem;
 
             a{
                
                 display: flex;
-                flex-direction:column-reverse;
+                flex-direction:column;
                 border: 1px solid #aaa;
                 align-items: center;
                 text-align: center;
+                position: relative;
 
                 .title {
 
@@ -37,6 +39,7 @@
                     display: block;
                     width: 150px;
                     height: 150px;
+                   
                 }
             }
 
@@ -52,6 +55,8 @@
     height: 50px;
     object-fit: cover;
     background-repeat: no-repeat;
+    position: absolute;
+    top:-3rem;
     
 }
 

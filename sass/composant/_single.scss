@@ -1,0 +1,31 @@
+.site__main.evenement {
+
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+
+        display: block;
+
+    }
+
+    .image__evenement {
+
+        
+        height: 20rem;
+        width: 74vw;
+        
+    }
+
+    .wp-post-image{
+
+    
+       object-fit: cover;
+       height: 20rem;
+       width: 74vw;
+        
+    }
+}
