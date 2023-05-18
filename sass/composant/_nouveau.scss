@@ -26,3 +26,42 @@
     color: whitesmoke;
     text-decoration: none;
 }
+
+.nouveaute a {
+    position: relative;
+}
+
+.nouveaute a::after {
+
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    top: 20%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.nouveaute a:hover::after {
+
+    transform: translate(-50%,-1.5rem);
+    opacity: 1;
+
+}
+
+.nouveaute li {
+    
+    transition: all 0.2s ease-in-out;
+}
+
+
+.nouveaute li:hover {
+
+    transform: translateY(0.2rem);
+}
