@@ -10,6 +10,24 @@
 
             <h1>Bienvenue sur 4W4</h1>
 
+            <div class="nouveaute">
+                
+            <p>Découvrez nos derniers articles :</p>
+				<ul>
+					<?php
+						$my_query = new WP_Query('showposts=5');
+						while ($my_query->have_posts()) : $my_query->the_post();
+					?>
+					<li>
+						<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+					</li>
+					<?php
+						endwhile;
+					?>
+				</ul>
+            </div>
+            
+
             <section class="galerie__acceuil">
                 <div class="sidebar">
                  <?php dynamic_sidebar( 'entete_1' ); ?>

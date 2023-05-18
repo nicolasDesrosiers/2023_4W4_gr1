@@ -4,6 +4,8 @@
  * pour afficher une archive d'article de categrie spécifique
  * http://localhost/4w4gr1/category/cours/
  * http://localhost/4w4gr1/category/note-4w4/
+ * http://localhost/4w4gr1/category/projet/
+ * 
  *  */ 
 ?>
 

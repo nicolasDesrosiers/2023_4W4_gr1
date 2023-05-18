@@ -25,7 +25,7 @@ if ( has_post_thumbnail() ) {
    echo get_the_post_thumbnail(29,array(100,100)); // va cherche le ID de la photo
 } 
 
-echo get_the_ID()
+
 ?>
 </article>
 
