@@ -1151,6 +1151,26 @@ h1 {
   width: 74vw;
 }
 
+.site__main.activiter {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.site__main.activiter h1 {
+  display: block;
+}
+.site__main.activiter .image__evenement {
+  height: 20rem;
+  width: 74vw;
+}
+.site__main.activiter .wp-post-image {
+  object-fit: cover;
+  height: 20rem;
+  width: 74vw;
+}
+
 /* --------------------------------------------- composant */
 .site {
   display: grid;
