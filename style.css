@@ -956,10 +956,12 @@ figure figure {
 
 .menu__archives {
   background-color: transparent;
+  padding-bottom: 5rem;
 }
 .menu__archives .menu {
   display: flex;
   justify-content: center;
+  gap: 3rem;
 }
 .menu__archives .menu .menu-item {
   display: flex;
@@ -969,6 +971,8 @@ figure figure {
   margin: 1rem;
   width: 40rem;
   height: 10rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .menu__archives .menu .menu-item a {
   display: flex;
@@ -976,35 +980,47 @@ figure figure {
   border: 1px solid #aaa;
   align-items: center;
   text-align: center;
-  position: relative;
+  color: whitesmoke;
 }
 .menu__archives .menu .menu-item a .title {
   font-size: 1.5rem;
+  z-index: 10;
+  position: absolute;
+  bottom: 50%;
 }
 .menu__archives .menu .menu-item a .description {
   font-size: 0.8rem;
+  z-index: 10;
+  position: absolute;
+  bottom: 40%;
 }
-.menu__archives .menu .menu-item a .menu-thumbnail {
-  display: block;
-  width: 150px;
-  height: 150px;
+.menu__archives .menu .menu-item a::after {
+  content: "";
+  position: absolute;
+  bottom: 25%;
+  width: 40rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+.menu__archives .menu .menu-item:hover {
+  scale: 1.1;
 }
 
 .img__archive {
-  width: 10%;
-  height: 50px;
-  object-fit: cover;
+  width: 40rem;
+  height: 10rem;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
   position: absolute;
-  top: -3rem;
 }
 
 .bloc__cours .img__archive {
-  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
+  background-image: url(https://formeret.fr/wp-content/uploads/2018/11/Salle-de-classe-Arriure-plan-titre.jpg);
 }
 
 .bloc__notes .img__archive {
-  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=briefcase);
+  background-image: url(https://media1.ledevoir.com/images_galerie/nwd_992487_802299/image.jpg);
 }
 
 .menu-note-4w4-container .menu {
