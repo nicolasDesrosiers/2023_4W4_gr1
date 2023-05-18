@@ -7,7 +7,7 @@
 ?>
 <article class="blocflex__galerie">
 
-    <h2>Le TIM en photos</h2>
+    <h2><?php the_title();?></h2>
 
     <?php the_content();?>
     <p><?php the_field('reference') ?></p>

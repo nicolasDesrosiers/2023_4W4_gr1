@@ -526,13 +526,13 @@ ol li {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  min-height: 30vh;
+  min-height: 14rem;
 }
 
 .blocflex__article {
   position: relative;
   display: flex;
-  height: 5rem;
+  height: 14rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -876,6 +876,21 @@ figure figure {
   display: block;
   width: 150px;
   height: 150px;
+}
+
+.img__archive {
+  width: 80%;
+  height: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.bloc__cours .img__archive {
+  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
+}
+
+.bloc__notes .img__archive {
+  background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=briefcase);
 }
 
 .menu__activiter {

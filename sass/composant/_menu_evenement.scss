@@ -45,3 +45,23 @@
     }
 
 }
+
+.img__archive {
+
+    width: 80%;
+    height: 50px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.bloc__cours .img__archive {
+
+    background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=academic-cap);
+    
+}
+
+.bloc__notes .img__archive {
+
+    background-image: url(https://s2.svgbox.net/hero-solid.svg?ic=briefcase);
+    
+}

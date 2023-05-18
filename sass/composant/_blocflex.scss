@@ -4,9 +4,10 @@
 .blocflex{
 
     display: flex;
+    
     justify-content: space-evenly;
     flex-wrap: wrap;
-    min-height: 30vh;
+    min-height: 14rem;
     
   
     
@@ -16,7 +17,7 @@
 
     position: relative;
     display: flex;
-    height: 5rem;
+    height: 14rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;

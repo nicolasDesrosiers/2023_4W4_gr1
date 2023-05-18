@@ -94,7 +94,7 @@ function add_menu_description_and_thumbnail( $item_output, $item, $depth, $args 
                 $post_thumbnail_url = wp_get_attachment_image_src( $post_thumbnail_id, 'thumbnail' );
                 $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><img src="' . esc_url( $post_thumbnail_url[0] ) . '" class="menu-thumbnail" />', $item_output );
             } else {
-                $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span>', $item_output );
+                $item_output = str_replace( '">' . $args->link_before . $item->title, '">' . $args->link_before . '<span class="title">' . $item->title . '</span><span class="description">' . $item->description . '</span><figure class="img__archive"></figure>', $item_output );
             }
         }
         return $item_output;
@@ -137,5 +137,17 @@ function enregistrer_sidebar() {
                 'before_title' => '<h2 class="widget-title">',
                 'after_title' => '</h2>',
             ) );
+
+        register_sidebar( array(
+                'name' => __( 'entete 1', 'nom-de-mon-theme' ),
+                'id' => 'entete_1',
+                'description' => __( 'Une zone de widget pour afficher des widgets dans la page acceuil.', 'nom-de-mon-theme' ),
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            ) );    
+            
+           
     }
     add_action( 'widgets_init', 'enregistrer_sidebar' );
