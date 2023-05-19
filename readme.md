@@ -8,18 +8,27 @@
    
 #### Description 
 
-Ajout du plugin "Caroussel" ainsi que ses fonctions. Lorsque qu'on clique sur une photo celle-ci ouvre le caroussel et nous pouvons poursuivre la naviagation des photo a l'aide des fleches de gauche et droite. Un bouton fermer est aussi implémenter dans le caroussel ainsi que des boutons radio. 
+Modification du site web pour le rendre adaptatif et ajout de plusieur templates comme
+les activitées et evenements afin de suivre l'ensemble du Tp2.
 
-#### Ajout 
+Ce projet a perit d'améliorer globalement le site en y intégrant les éléments suivants:
 
-- carrousel.js
-- carrousel.php
-- style.scss ( pour le caroussel )
+- Ajout d'une boucle while dans le front-page.php pour montrer les 5 derniers articles
+mis en ligne 
+- Amélioration du caroussel sur differents viewports
+- Adaptivité du site web en mobile
+- Personnalisation de l'affichage d'un cours et de l'affichage d'une note de cours
+- Personnalisation et amélioration des archives cours et note de cours (category.php)
+- Amélioration du design et du fonctionnement de l'entête du site
+- Une page d'accueil contenant des blocs annonçant les événements, les nouveaux articles ou tous autres     contenus importants du site
+- Ajout de nouveaux « template-part »
+- Amélioration du footer
+- Amélioration de la structure du sidebar
+- Ajout de Widgets
 
-#### Fonctions
 
-- Fonction pour la création des images a intégrer dans le caroussel
-- Fonction pour afficher les images dans le caroussel
-- Fonction pour créer les boutons radios
-- Fonction pour changer les images lors d'un clic gauche sur la souris
+
+
+
+
 
