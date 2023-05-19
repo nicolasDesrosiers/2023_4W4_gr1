@@ -1,4 +1,4 @@
-#   Exercice 2 
+# Travail Pratique 2 
  ## 4W4-Conception d'interfaces et développement Web
  ### Auteur : Nicolas Carrière
 

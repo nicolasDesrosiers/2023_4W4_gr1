@@ -883,16 +883,16 @@ figure figure {
 }
 .menu__evenement .menu .menu-item a .menu-thumbnail {
   display: block;
-  width: 350px;
-  height: 200px;
+  width: 21.8rem;
+  height: 12.5rem;
   object-fit: cover;
 }
 .menu__evenement .menu .menu-item a::after {
   content: "";
   position: absolute;
   bottom: 25%;
-  width: 350px;
-  height: 100px;
+  width: 21.8rem;
+  height: 12, 5rem;
   background-color: rgba(0, 0, 0, 0.37);
 }
 .menu__evenement .menu .menu-item a:hover {
@@ -937,8 +937,8 @@ figure figure {
 }
 .menu__activiter .menu .menu-item a .menu-thumbnail {
   display: block;
-  width: 350px;
-  height: 200px;
+  width: 21.8rem;
+  height: 12, 5rem;
   object-fit: contain;
   object-fit: cover;
 }
@@ -946,8 +946,8 @@ figure figure {
   content: "";
   position: absolute;
   bottom: 25%;
-  width: 350px;
-  height: 100px;
+  width: 21.8rem;
+  height: 6.25rem;
   background-color: rgba(0, 0, 0, 0.37);
 }
 .menu__activiter .menu .menu-item a:hover {
@@ -969,10 +969,15 @@ figure figure {
   border: 1px solid #aaa;
   height: auto;
   margin: 1rem;
-  width: 40rem;
+  width: 20rem;
   height: 10rem;
   position: relative;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 700px) {
+  .menu__archives .menu .menu-item {
+    width: 40rem;
+  }
 }
 .menu__archives .menu .menu-item a {
   display: flex;
@@ -992,27 +997,42 @@ figure figure {
   font-size: 0.8rem;
   z-index: 10;
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
+}
+@media screen and (min-width: 700px) {
+  .menu__archives .menu .menu-item a .description {
+    bottom: 40%;
+  }
 }
 .menu__archives .menu .menu-item a::after {
   content: "";
   position: absolute;
   bottom: 25%;
-  width: 40rem;
+  width: 20rem;
   height: 5rem;
   background-color: rgba(0, 0, 0, 0.37);
+}
+@media screen and (min-width: 700px) {
+  .menu__archives .menu .menu-item a::after {
+    width: 40rem;
+  }
 }
 .menu__archives .menu .menu-item:hover {
   scale: 1.1;
 }
 
 .img__archive {
-  width: 40rem;
+  width: 20rem;
   height: 10rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   position: absolute;
+}
+@media screen and (min-width: 700px) {
+  .img__archive {
+    width: 40rem;
+  }
 }
 
 .bloc__cours .img__archive {

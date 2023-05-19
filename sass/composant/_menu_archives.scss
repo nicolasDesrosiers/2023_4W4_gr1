@@ -18,10 +18,17 @@
             border: 1px solid #aaa;
             height: auto;
             margin: 1rem;
-            width: 40rem;
+            width: 20rem;
             height: 10rem;
             position: relative;
             transition: all 0.3s ease-in-out;
+
+            @media screen and (min-width:$largeur__tablette) {
+              
+                width: 40rem;
+
+ 
+             }
 
             a{
                
@@ -31,6 +38,7 @@
                 align-items: center;
                 text-align: center;
                 color: whitesmoke;
+                
                 
                 .title {
 
@@ -44,7 +52,11 @@
                     font-size: .8rem;
                     z-index: 10;
                     position: absolute;
-                    bottom: 40%;
+                    bottom: 30%;
+                    @media screen and (min-width:$largeur__tablette) {
+              
+                       bottom: 40%;
+                     }
                 }
                
             }
@@ -54,9 +66,16 @@
                 content: "";
                 position: absolute;
                 bottom: 25%;
-                width: 40rem;
+                width: 20rem;
                 height: 5rem;
                 background-color: rgba(0, 0, 0, 0.37);
+
+                @media screen and (min-width:$largeur__tablette) {
+              
+                    width: 40rem;
+    
+     
+                 }
             }
 
             
@@ -74,12 +93,19 @@
 .img__archive {
 
    
-    width: 40rem;
+    width: 20rem;
     height: 10rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     position: absolute;
+
+    @media screen and (min-width:$largeur__tablette) {
+              
+        width: 40rem;
+
+
+     }
   
     
 }
