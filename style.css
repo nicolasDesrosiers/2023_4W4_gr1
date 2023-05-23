@@ -992,8 +992,10 @@ figure figure {
 }
 .menu__atelier .menu .menu-item a .menu-thumbnail {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 21.8rem;
+  height: 12, 5rem;
+  object-fit: contain;
+  object-fit: cover;
 }
 .menu__atelier .menu .menu-item a::after {
   content: "";
