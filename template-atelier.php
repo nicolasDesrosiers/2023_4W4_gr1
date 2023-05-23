@@ -14,7 +14,7 @@ if ( have_posts() ) : the_post(); ?>
 </div>
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
-<p>Le formateur.ice :  <?php the_field('formateur'); ?></p>
+<p>Le formateur.ice attribué :  <?php the_field('formateur'); ?></p>
 <p>La date de début de l'atelier: <?php the_field('date_de_debut_de_latelier'); ?></p>
 <p>L'heure de début de l'atelier: <?php the_field('heure_de_debut'); ?></p>  
 <p>Nombres de séances: <?php the_field('duree_de_seances'); ?></p> 
