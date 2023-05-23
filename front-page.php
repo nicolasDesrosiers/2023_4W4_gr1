@@ -36,6 +36,16 @@
 
             <section class="blocflex">
 
+
+            <div class="section__atelier">
+                    <h2>Les ateliers du TIM</h2>
+
+                    <?php wp_nav_menu(array(
+                            "menu" => "atelier",
+                            "container" => "nav",
+                            "container_class" => "menu__atelier")); ?> 
+               </div>
+
                <div class="section__evenement">
                     <h2>Les événements à venir</h2>
 
